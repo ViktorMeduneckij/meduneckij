@@ -50,7 +50,9 @@ const isDesktop = useMediaQuery("(min-width: 769px)");
         <div
           class="w-full h-[200px] md:h-[450px] object-cover border-dashed border-2 border-gray-300"
         >
-          <h3 class="font-bold flex justify-center items-center h-full">
+          <h3
+            class="font-bold flex justify-center items-center h-full text-center"
+          >
             Open to new opportunities
           </h3>
         </div>
