@@ -3,7 +3,7 @@
   <p>
     I prefer working long-term on products rather than moving quickly between
     roles. Spending time with a product and its people allows me to contribute
-    beyond code- by understanding real problems, suggesting meaningful
+    beyond code by understanding real problems, suggesting meaningful
     improvements, and helping shape better solutions.
   </p>
   <p class="mt-2">

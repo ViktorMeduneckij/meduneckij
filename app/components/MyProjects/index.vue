@@ -9,7 +9,13 @@
       <WorkCard
         date="2025"
         title="Vaikasmieste.lt"
-        description="Vaikasmieste.lt is a side project aimed towards Lithuanian parents. It helps parents find baby changing stations in public fast and with ease. Main feature of the project- an interactive maps with over 150 locations mapped on it with type, community comments and more."
+        summary="A side project for Lithuanian parents that helps quickly locate baby changing stations in public spaces through an interactive map."
+        :highlights="[
+          'Designed and developed the project end-to-end',
+          'Built an interactive map with over 160 mapped locations',
+          'Included location types, community comments, and practical metadata',
+          'Focused on usability and fast access to essential information',
+        ]"
         :techStack="[
           'Nuxt.js',
           'Vue.js',
@@ -27,7 +33,13 @@
       <WorkCard
         date="2021"
         title="BigBonkTour.com"
-        description="BigBonkTour was a pet project of my to scratch my creative itch of writing and to see how far can I push traffic through organic SEO. Although project itself is not complicated, I focused a lot on gret web performance scores, SEO optimization and SSR. Sadly in the end I ran out of motivation and time to write articles, but at that point I was steadily generating an acceptable amount of unique visits per month from organic search. Now the project is shut down, but the code is still available on GitHub."
+        summary="A personal project exploring long-form content and organic SEO growth through a statically generated website."
+        :highlights="[
+          'Built a statically generated site with a strong focus on performance and SEO',
+          'Optimised pages for SSR and high web performance scores',
+          'Grew steady organic traffic through search engine optimisation',
+          'Terminated after reaching a stable level of organic monthly visits due to the lack of time. Source code remains available',
+        ]"
         :techStack="['Gatsby', 'React', 'GraphQL', 'Markdown']"
         image="/assets/bigbonktour.png"
         bgColor="#fff"

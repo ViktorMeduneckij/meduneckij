@@ -31,17 +31,18 @@ const isDesktop = useMediaQuery("(min-width: 769px)");
       :key="item.title"
       :date="item.date"
       :title="item.title"
-      :description="item.jobDescription || ''"
       :techStack="item.techStack || []"
       :image="item.image || ''"
       :bgColor="item.bgColor || ''"
       :url="item.url || ''"
+      :summary="item.summary || ''"
+      :highlights="item.highlights || []"
     />
     <WorkCard
       :key="'your-business'"
-      date="????"
+      date="2026"
       title="Your business"
-      description="I'm open to new opportunities. If you have a project that you want to discuss, please contact me."
+      summary="I’m open to new frontend roles and product-focused projects. If you have something in mind, feel free to get in touch."
       :techStack="['Web development']"
       bgColor="#FFF"
     >
@@ -50,7 +51,7 @@ const isDesktop = useMediaQuery("(min-width: 769px)");
           class="w-full h-[200px] md:h-[450px] object-cover border-dashed border-2 border-gray-300"
         >
           <h3 class="font-bold flex justify-center items-center h-full">
-            Your business.
+            Open to new opportunities
           </h3>
         </div>
       </template>
