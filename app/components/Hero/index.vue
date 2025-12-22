@@ -19,6 +19,9 @@
       src="/assets/waves-haikei.svg"
       alt="Hero image"
       class="w-full h-full object-cover"
+      preload
+      loading="eager"
+      fetch-priority="high"
     />
   </div>
 </template>
