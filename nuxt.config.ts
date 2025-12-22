@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "@nuxt/image",
     "@nuxt/fonts",
+    "nuxt-umami",
   ],
   routeRules: {
     "/": { prerender: true },
@@ -28,5 +29,10 @@ export default defineNuxtConfig({
         dir: "./app/assets/icons/companies",
       },
     ],
+  },
+  umami: {
+    id: process.env.UMAMI,
+    host: "https://cloud.umami.is/script.js",
+    autoTrack: true,
   },
 });

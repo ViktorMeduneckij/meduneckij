@@ -1,13 +1,3 @@
-<script setup lang="ts">
-const links = [
-  {
-    to: "#contact",
-    label: "Contact",
-    icon: "i-lucide:message-circle",
-  },
-];
-</script>
-
 <template>
   <UPageHero
     orientation="horizontal"
