@@ -23,7 +23,18 @@ import { PROJECTS } from "./config";
         :image="project.image"
         :bgColor="project.bgColor"
         :url="project.url"
-      />
+      >
+        <template #cta>
+          <UButton
+            icon="i-simple-icons:github"
+            target="_blank"
+            class="mt-2"
+            size="xl"
+            :to="project.githubUrl"
+            >View code on GitHub
+          </UButton>
+        </template>
+      </WorkCard>
     </div>
   </div>
 </template>

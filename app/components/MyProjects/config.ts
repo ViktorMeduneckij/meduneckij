@@ -21,6 +21,7 @@ export const PROJECTS = [
     image: "/assets/vaikasmieste.png",
     bgColor: "#fff",
     url: "https://viktormeduneckij.com",
+    githubUrl: "https://github.com/ViktorMeduneckij/vaikasmieste",
   },
   {
     date: "2021",
@@ -37,5 +38,6 @@ export const PROJECTS = [
     image: "/assets/bigbonktour.png",
     bgColor: "#fff",
     url: "https://github.com/ViktorMeduneckij/BigBonkTour",
+    githubUrl: "https://github.com/ViktorMeduneckij/BigBonkTour",
   },
 ];
