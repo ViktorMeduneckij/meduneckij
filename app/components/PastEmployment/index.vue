@@ -25,7 +25,7 @@ const isDesktop = useMediaQuery("(min-width: 769px)");
       }"
     />
   </ClientOnly>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-12">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
     <WorkCard
       v-for="item in PAST_EMPLOYMENT.filter((employment) => employment.isWork)"
       :key="item.title"
@@ -56,9 +56,7 @@ const isDesktop = useMediaQuery("(min-width: 769px)");
         </div>
       </template>
       <template #cta>
-        <UButton size="xl" class="mt-2" icon="lucide:message-circle"
-          >Let's talk</UButton
-        >
+        <ContactDrawer />
       </template>
     </WorkCard>
   </div>

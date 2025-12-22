@@ -12,7 +12,7 @@ const links = [
   <UPageHero
     orientation="horizontal"
     title="Frontend developer"
-    description="I build maintainable, high-performance frontend products."
+    description="I build maintainable, high-performance frontend for web."
     :ui="{
       container: 'px-0 sm:px-0 md:px-0 lg:px-0',
       description: 'max-w-[200px] sm:max-w-[unset]',

@@ -1,5 +1,5 @@
 <template>
-  <UDrawer direction="right">
+  <UDrawer direction="right" :handle="false">
     <UButton icon="i-lucide:message-circle" size="xl" class="cursor-pointer"
       >Contact</UButton
     >

@@ -26,21 +26,13 @@ const onSubmit = async (data: Schema) => {
 
 <template>
   <div>
-    <div class="flex justify-end">
-      <UButton
-        variant="ghost"
-        size="xl"
-        class="cursor-pointer"
-        icon="i-lucide:x"
-      />
-    </div>
-    <div class="flex flex-col justify-center">
+    <div class="flex flex-col justify-center px-4">
       <h2 class="font-bold">Let's talk</h2>
       <UForm
         :schema="schema"
         :state="state"
         @submit="onSubmit"
-        class="py-4 px-2 min-w-[400px] space-y-6"
+        class="py-4 px-2 min-w-[280px] md:min-w-[600px] space-y-6"
       >
         <UFormField label="Your name" name="name" required>
           <UInput v-model="state.name" class="w-full" size="xl" />
