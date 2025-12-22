@@ -1,0 +1,10 @@
+<template>
+  <UDrawer direction="right">
+    <UButton icon="i-lucide:message-circle" size="xl" class="cursor-pointer"
+      >Contact</UButton
+    >
+    <template #content>
+      <ContactForm />
+    </template>
+  </UDrawer>
+</template>

@@ -3,15 +3,13 @@ import { SOCIALS } from "~/constants";
 </script>
 
 <template>
-  <UHeader
-    :toggle="{
-      class: 'display-none',
-    }"
-  >
+  <UHeader :to="null" :toggle="{ class: 'hidden' }">
     <template #title>
       <NuxtImg src="/assets/logo.png" alt="Logo" />
     </template>
+
     <template #right>
+      <NuxtLink to="mailto:viktor@meduneckij.lt">viktor@meduneckij.lt</NuxtLink>
       <UButton
         variant="ghost"
         v-for="social in SOCIALS"
