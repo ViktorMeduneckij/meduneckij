@@ -12,20 +12,20 @@ const items = [
 </script>
 
 <template>
-  <UCarousel
-    loop
-    :autoplay="{ delay: 5000 }"
-    v-slot="{ item }"
-    :items="items"
-    class="w-full"
-    :ui="{ item: 'basis-full' }"
-  >
-    <div class="w-full bg-neutral-50 p-4 rounded-lg">
+  <div class="w-full bg-neutral-50 p-4 rounded-lg">
+    <UCarousel
+      loop
+      :autoplay="{ delay: 5000 }"
+      v-slot="{ item }"
+      :items="items"
+      class="w-full"
+      :ui="{ item: 'basis-full' }"
+    >
       <UIcon name="ri:double-quotes-l" class="size-32" />
       <p class="mb-4 w-full">{{ item.text }}</p>
       <div class="text-sm font-semibold mt-1 text-center">
         - {{ item.author }}
       </div>
-    </div>
-  </UCarousel>
+    </UCarousel>
+  </div>
 </template>

@@ -32,7 +32,7 @@ export const PROJECTS = [
       "Built a statically generated site with a strong focus on performance and SEO",
       "Optimised pages for SSR and high web performance scores",
       "Grew steady organic traffic through search engine optimisation",
-      "Terminated after reaching a stable level of organic monthly visits due to the lack of time. Source code remains available",
+      "Discontinued due to the lack of time, but managed to reach a stable level of organic monthly visits. Source code remains available",
     ],
     techStack: ["Gatsby", "React", "GraphQL", "Markdown"],
     image: "/assets/bigbonktour.png",

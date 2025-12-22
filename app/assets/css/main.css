@@ -11,6 +11,11 @@ h3 {
   font-family: "Source Sans 3", sans-serif;
 }
 
+h2,
+h3 {
+  line-height: 40px;
+}
+
 h2 {
   font-size: 48px;
 }

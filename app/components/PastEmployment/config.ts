@@ -10,7 +10,6 @@ export const PAST_EMPLOYMENT = [
   {
     date: "2022 – 2026",
     title: "DappRadar",
-    role: "Senior frontend developer",
     icon: "i-companies:dappradar",
     isWork: true,
     bgColor: "#191919",
@@ -31,7 +30,6 @@ export const PAST_EMPLOYMENT = [
   {
     date: "2019 – 2022",
     title: "NordPass",
-    role: "Frontend developer",
     icon: "i-companies:nordpass",
     isWork: true,
     bgColor: "#01432B",
@@ -52,7 +50,6 @@ export const PAST_EMPLOYMENT = [
   {
     date: "2017 – 2019",
     title: "Adapt A/S",
-    role: "Intern → Junior developer",
     icon: "i-companies:adapt",
     bgColor: "#260372",
     isWork: true,
@@ -68,5 +65,13 @@ export const PAST_EMPLOYMENT = [
     techStack: ["Twig", "CSS", "React", "PHP", "Drupal"],
     image: "/assets/adapt-asset.png",
     url: "https://adaptagency.com/",
+  },
+  {
+    date: "2014 – 2019",
+    title: "University College Nordjylland",
+    role: "Software development, Bachelor's degree",
+    icon: "i-companies:ucn",
+    bgColor: "#260372",
+    isWork: false,
   },
 ];

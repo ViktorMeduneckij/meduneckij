@@ -18,6 +18,12 @@ import { SOCIALS } from "~/constants";
         :icon="social.icon"
         target="_blank"
       />
+      <UButton
+        icon="material-symbols:picture-as-pdf"
+        variant="ghost"
+        to="/viktor-meduneckij.pdf"
+        target="_blank"
+      />
     </template>
   </UHeader>
 </template>
