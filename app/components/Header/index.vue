@@ -3,7 +3,11 @@ import { SOCIALS } from "~/constants";
 </script>
 
 <template>
-  <UHeader>
+  <UHeader
+    :toggle="{
+      class: 'display-none',
+    }"
+  >
     <template #title>
       <NuxtImg src="/assets/logo.png" alt="Logo" />
     </template>

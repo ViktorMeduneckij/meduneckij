@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <UMain>
+  <UMain class="pt-0">
     <slot />
   </UMain>
   <USeparator />

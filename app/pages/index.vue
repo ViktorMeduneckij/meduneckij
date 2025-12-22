@@ -2,7 +2,7 @@
 const links = [
   {
     to: "#contact",
-    label: "Let's talk business",
+    label: "Contact",
     icon: "i-lucide:message-circle",
   },
 ];
@@ -10,14 +10,26 @@ const links = [
 
 <template>
   <section>
-    <UPageHero
-      title="Frontend developer"
-      description="I build maintainable, high performance frontend solutions."
-      :links="links"
-      :ui="{
-        container: 'lg:py-12',
-      }"
-    />
+    <div class="">
+      <UPageHero
+        orientation="horizontal"
+        title="Frontend developer"
+        description="I build maintainable, high performance frontend solutions."
+        :links="links"
+        :ui="{
+          container: 'px-0',
+        }"
+      />
+      <div
+        class="absolute top-[var(--ui-header-height)] right-0 w-full h-full pointer-events-none z-[-1] max-h-[400px] lg:max-h-[600px] max-w-[50%] lg:max-w-[80%]"
+      >
+        <NuxtImg
+          src="/assets/waves-haikei.svg"
+          alt="Hero image"
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </div>
   </section>
   <section>
     <MeAsADeveloper />
