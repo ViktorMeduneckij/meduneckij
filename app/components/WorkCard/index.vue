@@ -7,6 +7,7 @@
           :src="image"
           alt="Work image"
           class="w-full h-[200px] md:h-[450px] object-contain border-1 border-gray-300 hover:scale-97 transition-all duration-300"
+          loading="lazy"
         />
         <slot name="image" />
       </div>
