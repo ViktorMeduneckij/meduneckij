@@ -1,0 +1,56 @@
+export const PAST_EMPLOYMENT = [
+  {
+    date: `${new Date().getFullYear()} - ???`,
+    title: "Your business",
+    description: "",
+    icon: "lucide:circle-question-mark",
+    isWork: false,
+    bgColor: "#FFF",
+  },
+  {
+    date: "2022 - 2026",
+    title: "DappRadar",
+    description: "Senior frontend developer",
+    icon: "i-companies:dappradar",
+    isWork: true,
+    bgColor: "#191919",
+    jobDescription:
+      "Implementing web3 solutions on the World's Dapp store. I strive for reusability, clean code and well written solutions. Gained profound knowledge in web3 development- communicating with blockchain, creating web based features like staking, wallet connections. Led business important features from the beginning until release and support.Engage in a lot of in-house tools development- components, utilities, services.  Work closely with design team, collaborate on maintaining design system.",
+    techStack: ["web3", "TypeScript", "React", "Next.js", "Node.js"],
+    image: "/assets/dappradar-asset.png",
+    url: "https://dappradar.com",
+  },
+  {
+    date: "2019 - 2022 ",
+    title: "NordPass",
+    description: "Frontend developer",
+    icon: "i-companies:nordpass",
+    isWork: true,
+    bgColor: "#01432B",
+    jobDescription:
+      "Frontend developer, responsible for the internet presence of an in-house product. Worked closely with marketing team and product to represent NordPass on the internet. Daily work included building design-polished web pages and features while maintaining imaculate web performance. Ran a lot of A/B testing and data driven improvements based on Google Analytics data. On top of that, engaged a lot in internal company tooling development and mentoring of junior developers.",
+    techStack: ["React", "TypeScript", "Gatsby", "Node.js"],
+    image: "/assets/nordpass-asset.png",
+    url: "https://nordpass.com",
+  },
+  {
+    date: "2017-2019",
+    title: "Adapt A/S",
+    description: "Intern & junior developer",
+    icon: "i-companies:adapt",
+    bgColor: "#260372",
+    isWork: true,
+    jobDescription:
+      "At first I mainly worked on the backend with PHP, Drupal, and Twig templates. After a year and a half, I decided to switch to frontend and started learning the technologies used in that field: React, CSS, and JavaScript in general. In the end, together with senior developers, we launched several client projects using the most popular technologies of that time.",
+    techStack: ["Twig", "CSS", "React", "PHP", "Drupal"],
+    image: "/assets/adapt-asset.png",
+    url: "https://adaptagency.com/",
+  },
+  {
+    date: "2014-2019",
+    title: "University College Nordjylland",
+    description: "Software development, Bachelor's degree",
+    icon: "i-lucide:book-open",
+    isWork: false,
+  },
+];
