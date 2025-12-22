@@ -35,4 +35,7 @@ export default defineNuxtConfig({
     host: "https://cloud.umami.is/script.js",
     autoTrack: true,
   },
+  ui: {
+    colorMode: false,
+  },
 });
