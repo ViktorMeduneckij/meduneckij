@@ -27,8 +27,10 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
       routes: ["/"],
-      // Ignore these routes during crawling
-      ignore: ["/_vercel/image/**", "/_payload.json", "/_payload.json/**"],
+      // Ignore these routes during crawling (using regex patterns)
+      ignore: [/^\/_vercel\/image/, /^\/_payload\.json/],
+      // Don't fail on errors for runtime routes
+      failOnError: false,
     },
   },
   css: ["./app/assets/css/main.css"],
