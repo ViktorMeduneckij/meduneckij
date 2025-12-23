@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import * as yup from "yup";
+import type { FormSubmitEvent } from "@nuxt/ui";
 
+const toast = useToast();
 const schema = yup.object({
   name: yup.string().required("Your name is required"),
   email: yup
@@ -18,15 +20,40 @@ const state = reactive<Schema>({
   message: "",
 });
 
-const onSubmit = async (data: Schema) => {
-  // Handle form submission
-  console.log("Form submitted:", data);
+const onSubmit = async (event: FormSubmitEvent<Schema>) => {
+  const { data: emailData, error } = await $fetch("/api/send", {
+    method: "POST",
+    body: {
+      name: event.data.name,
+      email: event.data.email,
+      message: event.data.message,
+    },
+  });
+
+  if (error) {
+    toast.add({
+      title: "Error",
+      description:
+        "Failed to send message, if issue persists, please contact me directly at viktor@meduneckij.lt.",
+      color: "error",
+    });
+  } else {
+    toast.add({
+      title: "Success",
+      description: "Message sent successfully",
+      color: "success",
+    });
+
+    state.name = "";
+    state.email = "";
+    state.message = "";
+  }
 };
 </script>
 
 <template>
   <div>
-    <div class="flex flex-col justify-center px-4">
+    <div class="flex flex-col justify-center p-4">
       <h2 class="font-bold">Let's talk</h2>
       <UForm
         :schema="schema"

@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/fonts",
     "nuxt-umami",
+    "nuxt-resend",
   ],
   routeRules: {
     "/": { prerender: true },
@@ -34,6 +35,7 @@ export default defineNuxtConfig({
     id: process.env.UMAMI,
     host: "https://cloud.umami.is/script.js",
     autoTrack: true,
+    ignoreLocalhost: true,
   },
   ui: {
     colorMode: false,
