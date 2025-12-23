@@ -16,12 +16,14 @@ import { SOCIALS } from "~/constants";
         :key="social.label"
         :to="social.url"
         :icon="social.icon"
+        :aria-label="`Visit ${social.label} profile`"
         target="_blank"
       />
       <UButton
         icon="material-symbols:picture-as-pdf"
         variant="ghost"
         to="/viktor-meduneckij.pdf"
+        aria-label="Download CV as PDF"
         target="_blank"
       />
     </template>
