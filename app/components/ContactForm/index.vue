@@ -82,7 +82,7 @@ const onSubmit = async (event: FormSubmitEvent<Schema>) => {
         <UButton
           type="submit"
           size="xl"
-          class="mt-4"
+          class="mt-4 cursor-pointer"
           trailingIcon="i-lucide:send"
           >Send Message</UButton
         >
