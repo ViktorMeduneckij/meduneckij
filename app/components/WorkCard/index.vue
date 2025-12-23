@@ -6,7 +6,8 @@
           v-if="image"
           :src="image"
           alt="Work image"
-          class="w-full h-[200px] md:h-[450px] object-contain border-1 border-gray-300 hover:scale-97 transition-all duration-300"
+          class="w-full h-[200px] md:h-[450px] object-contain hover:scale-97 transition-all duration-300"
+          :class="{ 'border-1 border-gray-300': border }"
           loading="lazy"
         />
         <slot name="image" />
@@ -17,7 +18,8 @@
         v-if="image"
         :src="image"
         alt="Work image"
-        class="w-full h-[200px] md:h-[450px] object-contain border-1 border-gray-300 hover:scale-97 transition-all duration-300"
+        class="w-full h-[200px] md:h-[450px] object-contain hover:scale-97 transition-all duration-300"
+        :class="{ 'border-1 border-gray-300': border }"
         loading="lazy"
       />
       <slot name="image" />
@@ -53,5 +55,6 @@ defineProps<{
   url?: string;
   summary?: string;
   highlights?: string[];
+  border?: boolean;
 }>();
 </script>
