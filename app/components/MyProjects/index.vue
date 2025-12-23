@@ -23,6 +23,7 @@ import { PROJECTS } from "./config";
         :image="project.image"
         :bgColor="project.bgColor"
         :url="project.url"
+        :border="false"
       >
         <template #cta>
           <UButton
