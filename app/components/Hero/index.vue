@@ -22,7 +22,7 @@
     </template>
   </UPageHero>
   <div
-    class="absolute top-[var(--ui-header-height)] right-0 w-full h-full pointer-events-none z-[-1] max-h-[500px] lg:max-h-[600px] max-w-[50%] lg:max-w-[80%]"
+    class="absolute top-[var(--ui-header-height)] right-0 w-full h-full pointer-events-none z-[-1] max-h-[500px] lg:max-h-[600px] max-w-[53%] lg:max-w-[80%]"
   >
     <NuxtImg
       src="/assets/waves-haikei.svg"
