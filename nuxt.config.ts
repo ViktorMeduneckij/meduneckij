@@ -19,6 +19,7 @@ export default defineNuxtConfig({
   ],
   gtag: {
     id: process.env.NUXT_GTAG_ID,
+    enabled: process.env.NODE_ENV === "production",
   },
   routeRules: {
     "/**": { prerender: true },
