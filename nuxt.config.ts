@@ -15,7 +15,11 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "nuxt-umami",
     "nuxt-resend",
+    "nuxt-gtag",
   ],
+  gtag: {
+    id: process.env.NUXT_GTAG_ID,
+  },
   routeRules: {
     "/**": { prerender: true },
     // Exclude runtime routes from prerendering
