@@ -18,11 +18,17 @@ export default defineNuxtConfig({
   ],
   routeRules: {
     "/**": { prerender: true },
+    // Exclude runtime routes from prerendering
+    "/_vercel/image/**": { prerender: false },
+    "/_payload.json": { prerender: false },
+    "/_payload.json/**": { prerender: false },
   },
   nitro: {
     prerender: {
       crawlLinks: true,
       routes: ["/"],
+      // Ignore these routes during crawling
+      ignore: ["/_vercel/image/**", "/_payload.json", "/_payload.json/**"],
     },
   },
   css: ["./app/assets/css/main.css"],
@@ -49,5 +55,8 @@ export default defineNuxtConfig({
   },
   ui: {
     colorMode: false,
+  },
+  image: {
+    format: ["webp", "avif"],
   },
 });
