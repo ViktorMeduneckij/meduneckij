@@ -1,9 +1,13 @@
 import tailwindcss from "@tailwindcss/vite";
 
-// https://nuxt.com/docs/api/configuration/nuxt-config
+declare const process: {
+  env: Record<string, string | undefined>;
+};
+
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
+  ssr: true,
   modules: [
     "@nuxt/eslint",
     "@nuxt/ui",
@@ -13,7 +17,13 @@ export default defineNuxtConfig({
     "nuxt-resend",
   ],
   routeRules: {
-    "/": { prerender: true },
+    "/**": { prerender: true },
+  },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ["/"],
+    },
   },
   css: ["./app/assets/css/main.css"],
   vite: {
