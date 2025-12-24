@@ -14,28 +14,7 @@ import { PROJECTS } from "./config";
       :key="project.title"
       class="w-full md:w-1/2"
     >
-      <WorkCard
-        :date="project.date"
-        :title="project.title"
-        :summary="project.summary"
-        :highlights="project.highlights"
-        :techStack="project.techStack"
-        :image="project.image"
-        :bgColor="project.bgColor"
-        :url="project.url"
-        :border="false"
-      >
-        <template #cta>
-          <UButton
-            icon="i-simple-icons:github"
-            target="_blank"
-            class="mt-2"
-            size="xl"
-            :to="project.githubUrl"
-            >View code on GitHub
-          </UButton>
-        </template>
-      </WorkCard>
+      <ProjectCard v-bind="project" :key="project.title" />
     </div>
   </div>
 </template>

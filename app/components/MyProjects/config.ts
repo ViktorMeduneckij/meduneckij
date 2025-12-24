@@ -1,6 +1,5 @@
 export const PROJECTS = [
   {
-    date: "2025",
     title: "Vaikasmieste.lt",
     summary:
       "A side project for Lithuanian parents that helps quickly locate baby changing stations in public spaces through an interactive map.",
@@ -24,7 +23,6 @@ export const PROJECTS = [
     githubUrl: "https://github.com/ViktorMeduneckij/vaikasmieste",
   },
   {
-    date: "2021",
     title: "BigBonkTour.com",
     summary:
       "A personal project exploring long-form content and organic SEO growth through a statically generated website.",

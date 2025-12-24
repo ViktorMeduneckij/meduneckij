@@ -23,6 +23,7 @@ export default defineNuxtConfig({
     "nuxt-umami",
     "nuxt-resend",
     "nuxt-gtag",
+    "@nuxt/hints"
   ],
   gtag: {
     id: process.env.NUXT_GTAG_ID,

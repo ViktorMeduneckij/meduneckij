@@ -27,19 +27,12 @@ const isDesktop = useMediaQuery("(min-width: 769px)");
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
     <WorkCard
       v-for="item in PAST_EMPLOYMENT.filter((employment) => employment.isWork)"
+      v-bind="item"
       :key="item.title"
-      :date="item.date"
-      :title="item.title"
-      :techStack="item.techStack || []"
-      :image="item.image || ''"
-      :bgColor="item.bgColor || ''"
-      :url="item.url || ''"
-      :summary="item.summary || ''"
-      :highlights="item.highlights || []"
     />
     <WorkCard
       :key="'your-business'"
-      date="2026"
+      :date="`${new Date().getFullYear()}`"
       title="Your business"
       summary="I’m open to new frontend roles and product-focused projects. If you’re building something meaningful and need experienced frontend support, let’s talk."
       :techStack="['Web development']"
