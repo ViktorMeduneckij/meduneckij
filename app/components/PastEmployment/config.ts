@@ -8,7 +8,7 @@ export const PAST_EMPLOYMENT = [
     bgColor: "#FFF",
   },
   {
-    date: "2022 – 2026",
+    date: "2022 – now",
     title: "DappRadar",
     icon: "i-companies:dappradar",
     isWork: true,
