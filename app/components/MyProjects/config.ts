@@ -19,8 +19,7 @@ export const PROJECTS = [
     ],
     image: "/assets/vaikasmieste.png",
     bgColor: "#fff",
-    url: "https://viktormeduneckij.com",
-    githubUrl: "https://github.com/ViktorMeduneckij/vaikasmieste",
+    url: "https://vaikasmieste.lt",
   },
   {
     title: "BigBonkTour.com",
@@ -35,7 +34,6 @@ export const PROJECTS = [
     techStack: ["Gatsby", "React", "GraphQL", "Markdown"],
     image: "/assets/bigbonktour.png",
     bgColor: "#fff",
-    url: "https://github.com/ViktorMeduneckij/BigBonkTour",
     githubUrl: "https://github.com/ViktorMeduneckij/BigBonkTour",
   },
 ];

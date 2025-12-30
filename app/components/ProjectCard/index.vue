@@ -18,18 +18,28 @@
       </p>
     </div>
     <p class="text-sm text-gray-500 text-[18px] mb-2">{{ summary }}</p>
-    <ol v-if="highlights" class="list-disc list-inside">
+    <ol v-if="highlights" class="list-disc list-inside min-h-[120px]">
       <li v-for="highlight in highlights" :key="highlight">
         {{ highlight }}
       </li>
     </ol>
     <UButton
+      v-if="url"
+      icon="lucide:external-link"
+      target="_blank"
+      class="mt-2"
+      size="xl"
+      :to="url"
+      >View project</UButton
+    >
+    <UButton
+      v-if="githubUrl"
       icon="i-simple-icons:github"
       target="_blank"
       class="mt-2"
       size="xl"
-      :to="githubUrl"
-      >View code on GitHub
+      :to="githubUrl || url"
+      >{{ githubUrl ? "View code on GitHub" : "View project" }}
     </UButton>
   </article>
 </template>
@@ -42,6 +52,7 @@ defineProps<{
   bgColor: string;
   summary?: string;
   highlights?: string[];
-  githubUrl: string;
+  githubUrl?: string;
+  url?: string;
 }>();
 </script>

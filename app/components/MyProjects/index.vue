@@ -4,7 +4,7 @@ import { PROJECTS } from "./config";
 
 <template>
   <h2 class="font-semibold mb-3">My projects</h2>
-  <p class="mb-12">
+  <p>
     I love coding, learning new technologies and building products. Here are
     some of my favorite projects that I'm proud of.
   </p>
