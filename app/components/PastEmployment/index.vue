@@ -8,7 +8,7 @@ const isDesktop = useMediaQuery("(min-width: 769px)");
 <template>
   <h2 class="font-semibold mb-3">Past employment</h2>
   <p>
-    I’ve worked on both client projects and long-term product teams,
+    I've worked on both client projects and long term product teams,
     collaborating across disciplines and international environments.
   </p>
   <ClientOnly>
@@ -34,7 +34,7 @@ const isDesktop = useMediaQuery("(min-width: 769px)");
       :key="'your-business'"
       :date="`${new Date().getFullYear()}`"
       title="Your business"
-      summary="I’m open to new frontend roles and product-focused projects. If you’re building something meaningful and need experienced frontend support, let’s talk."
+      summary="I'm open to new frontend roles and product focused projects. If you're building something meaningful and need experienced frontend support, let's talk."
       :techStack="['Web development']"
       bgColor="#FFF"
     >

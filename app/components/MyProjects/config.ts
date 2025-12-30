@@ -4,7 +4,7 @@ export const PROJECTS = [
     summary:
       "A side project for Lithuanian parents that helps quickly locate baby changing stations in public spaces through an interactive map.",
     highlights: [
-      "Designed and developed the project end-to-end",
+      "Designed and developed the project end to end",
       "Built an interactive map with over 160 mapped locations",
       "Included location types, community comments, and practical metadata",
       "Focused on usability and fast access to essential information",
@@ -24,7 +24,7 @@ export const PROJECTS = [
   {
     title: "BigBonkTour.com",
     summary:
-      "A personal project exploring long-form content and organic SEO growth through a statically generated website.",
+      "A personal project exploring long form content and organic SEO growth through a statically generated website.",
     highlights: [
       "Built a statically generated site with a strong focus on performance and SEO",
       "Optimised pages for SSR and high web performance scores",

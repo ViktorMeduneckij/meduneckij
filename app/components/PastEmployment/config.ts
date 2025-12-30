@@ -14,12 +14,12 @@ export const PAST_EMPLOYMENT = [
     isWork: true,
     bgColor: "#191919",
     summary:
-      "Built and maintained core frontend features for the world’s largest dapp store, working on both product-facing functionality and internal tooling.",
+      "Built and maintained core frontend features for the world's largest dapp store, working on both product facing functionality and internal tooling.",
     highlights: [
       "Implemented web3 features including wallet connections, staking flows, and blockchain communication",
-      "Led business-critical features from initial design through release and ongoing support",
+      "Led business critical features from initial design through release and ongoing support",
       "Focused on clean, reusable, and maintainable frontend architecture",
-      "Contributed extensively to in-house tooling: shared components, utilities, and services",
+      "Contributed extensively to in house tooling: shared components, utilities, and services",
       "Worked closely with the design team to maintain and evolve the design system",
     ],
 
@@ -36,9 +36,9 @@ export const PAST_EMPLOYMENT = [
     summary:
       "Responsible for the web presence of NordPass, working closely with product and marketing to deliver high-quality, performance-focused frontend experiences.",
     highlights: [
-      "Built and maintained design-polished marketing pages and product-related web features",
+      "Built and maintained design polished marketing pages and product related web features",
       "Maintained strong web performance standards across the site",
-      "Ran A/B tests and implemented data-driven improvements based on analytics insights",
+      "Ran A/B tests and implemented data driven improvements based on analytics insights",
       "Collaborated daily with marketing and product teams on content and feature delivery",
       "Contributed to internal tooling and mentored junior developers",
     ],
@@ -54,7 +54,7 @@ export const PAST_EMPLOYMENT = [
     bgColor: "#260372",
     isWork: true,
     summary:
-      "Started as a backend-focused intern and transitioned into frontend development, contributing to multiple client projects in a fast-paced agency environment.",
+      "Started as a backend focused intern and transitioned into frontend development, contributing to multiple client projects in a fast-paced agency environment.",
     highlights: [
       "Worked on backend features using PHP, Drupal, and Twig templates",
       "Gradually transitioned to frontend development with React, CSS, and JavaScript",
