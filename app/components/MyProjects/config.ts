@@ -17,7 +17,7 @@ export const PROJECTS = [
       "Nitro",
       "Google Maps",
     ],
-    image: "/assets/vaikasmieste.png",
+    image: "/assets/vaikasmieste.jpg",
     bgColor: "#fff",
     url: "https://vaikasmieste.lt",
   },
