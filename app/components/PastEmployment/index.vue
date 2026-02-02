@@ -24,34 +24,34 @@ const isDesktop = useMediaQuery("(min-width: 769px)");
       }"
     />
   </ClientOnly>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 mb-8">
     <WorkCard
       v-for="item in PAST_EMPLOYMENT.filter((employment) => employment.isWork)"
       v-bind="item"
       :key="item.title"
     />
-    <WorkCard
-      :key="'your-business'"
-      :date="`${new Date().getFullYear()}`"
-      title="Your business"
-      summary="I'm open to new frontend roles and product focused projects. If you're building something meaningful and need experienced frontend support, let's talk."
-      :techStack="['Web development']"
-      bgColor="#FFF"
-    >
-      <template #image>
-        <div
-          class="w-full h-[200px] md:h-[450px] object-cover border-dashed border-2 border-gray-300"
-        >
-          <h3
-            class="font-bold flex justify-center items-center h-full text-center"
-          >
-            Open to new opportunities
-          </h3>
-        </div>
-      </template>
-      <template #cta>
-        <ContactDrawer />
-      </template>
-    </WorkCard>
   </div>
+  <WorkCard
+    :key="'your-business'"
+    :date="`${new Date().getFullYear()}`"
+    title="Your business"
+    summary="I'm open to new frontend roles and product focused projects. If you're building something meaningful and need experienced frontend support, let's talk."
+    :techStack="['Web development']"
+    bgColor="#FFF"
+  >
+    <template #image>
+      <div
+        class="w-full h-[200px] md:h-[450px] object-cover border-dashed border-2 border-gray-300"
+      >
+        <h3
+          class="font-bold flex justify-center items-center h-full text-center"
+        >
+          Open to new opportunities
+        </h3>
+      </div>
+    </template>
+    <template #cta>
+      <ContactDrawer />
+    </template>
+  </WorkCard>
 </template>

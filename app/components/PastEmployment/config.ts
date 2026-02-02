@@ -8,6 +8,26 @@ export const PAST_EMPLOYMENT = [
     bgColor: "#FFF",
   },
   {
+    date: "2025 – now (freelance)",
+    title: "Nottier",
+    icon: "i-companies:nottier",
+    isWork: true,
+    bgColor: "#131515",
+    summary:
+      "Hired as a freelance frontend developer for an early stage AI driven perfume discovery startup, focusing on a clean, fast, and maintainable web experience that supports both product features and content heavy pages.",
+    highlights: [
+      "Built and maintained core product and marketing-facing frontend features using Nuxt.js and TypeScript",
+      "Together with backend developers, implemented an AI powered perfume discovery chatbot",
+      "Implemented responsive layouts and UI components with Nuxt/UI and custom solutions",
+      "Worked closely with design and product to translate requirements into production-ready features",
+      "Maintained a simple, scalable frontend structure suitable for a fast moving product",
+    ],
+
+    techStack: ["Nuxt.js", "TypeScript", "Tailwind CSS"],
+    image: "/assets/nottier-asset.png",
+    url: "https://nottier.com",
+  },
+  {
     date: "2022 – now",
     title: "DappRadar",
     icon: "i-companies:dappradar",
